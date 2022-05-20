@@ -3,8 +3,13 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --bg-color: rgb(255, 251, 236);
+    --dark-green: #293825;
+    --w: #ffff
+}
 body{
-    background-color: rgb(255, 251, 236);
+    background-color: var(--bg-color);
 }
 /* HEADER */
 #masthead{
@@ -15,16 +20,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: white;
-    background-color: rgb(255, 251, 236);
+    background-color: --w;
+    background-color: var(--bg-color);
 }
 .logo-header{
     width: 100%;
+    text-align: center;
 }
 .logo-header .picto-logo{
-    width: 100%;
+    width: 450px;
     height: 120px;
     object-fit: cover;
+    max-width: 100%;
 }
 /* NAVIGATION */
 .navigation{
@@ -40,7 +47,7 @@ body{
     display: none;
 }
 .li-nav{
-    background-color: cornsilk;
+    background-color: var(--bg-color);
     width: 60%;
     padding: 10px;
     margin: 1rem auto;
@@ -96,7 +103,103 @@ img{
     width: 100%;
     height: 100%;
 }
+h1{
+    font-size: 3rem;
+    font-style: italic;
+    color: rgb(0, 73, 0);
+    margin-bottom: 2rem;
+}
+p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.lil-margin-b{
+    margin-bottom: 1rem;
+}
+.margin-b{
+    margin-bottom: 2rem;
+}
+hr{
+    margin: 2rem auto;
+    height: 3px;
+    background-color: rgb(0, 73, 0);
+}
 /* MAIN */
 main{
     padding-top: 140px;
+    margin: 0 10px;
+}
+/* QUOTES */
+.allQuotes .blockquote {
+    position: relative;
+    max-width: 620px;
+    margin: 1rem auto 45px;
+}
+.allQuotes .blockquote .blockquote-content{
+    position: relative;
+    color: rgb(132, 146, 112);
+    font-size: 1.8rem;
+    line-height: 1;
+    border: 2px solid green;
+    border-radius:20px;
+    padding: 20px;
+}
+.allQuotes .blockquote .blockquote-content::after{
+    content:"";
+    position: absolute;
+    border: 2px solid green;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.allQuotes .blockquote .blockquote-content::before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--bg-color);
+    bottom: -3px;
+    left: 50px;
+}
+
+.allQuotes .blockquote .blockquote-author {
+    position: relative;
+    color: #e74848;
+    font-size: 1.3rem;
+    font-style: italic;
+    padding-top: 15px;
+    margin-left:150px;
+}
+.allQuotes .blockquote .blockquote-author:first-letter {
+    margin-left:-12px;
+  }
+  /* WELCOME */
+  /* VALUES */
+.value{
+    background-color: var(--dark-green);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    text-shadow: -1px 1px 0 #709d42;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.value p{
+    font-size: 25px;
+}
+.value h2{
+    font-size: 40px;
+}
+/* LOCALISATION */
+.localisation .adress span{
+    font-weight: bold;
+    font-style: italic;
+}
+iframe.map{
+    margin: 0 -10px;
+    width: 100vw;
 }
