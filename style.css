@@ -109,7 +109,7 @@ h1{
     color: rgb(0, 73, 0);
     margin-bottom: 2rem;
 }
-p{
+p, li{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
@@ -177,8 +177,10 @@ main{
 .allQuotes .blockquote .blockquote-author:first-letter {
     margin-left:-12px;
   }
-  /* WELCOME */
-  /* VALUES */
+.displayDesk{
+    display: none;
+}
+/* VALUES */
 .value{
     background-color: var(--dark-green);
     text-align: center;
@@ -194,6 +196,53 @@ main{
 .value h2{
     font-size: 40px;
 }
+/* PHILOSOPHIE */
+.philosophie h2{
+    font-size: 40px;
+    color: rgb(0, 73, 0);
+    font-style: italic;
+}
+.mix-multiply{
+    mix-blend-mode: multiply;
+}
+/* GOALS */
+.goals h2{
+    font-size: 40px;
+    color: rgb(0, 73, 0);
+    font-style: italic;
+}
+.goals ul{
+    text-align: center;
+}
+.goals ul li{
+    text-align: justify;
+}
+.goals ul li span.first-letter{
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(70, 167, 51);
+    margin-left: 2rem;
+}
+.goals .anim-feuille{
+    mix-blend-mode: multiply;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* LOCALISATION */
 .localisation .adress span{
     font-weight: bold;
@@ -202,4 +251,16 @@ main{
 iframe.map{
     margin: 0 -10px;
     width: 100vw;
+}
+
+@media screen and (min-width: 769px){
+    .allQuotes{
+        display: flex;
+    }
+    .allQuotes .blockquote{
+        width: 40%;
+    }
+    .displayDesk{
+        display: block;
+    }
 }
