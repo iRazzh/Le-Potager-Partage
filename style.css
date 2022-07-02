@@ -124,6 +124,12 @@ hr{
     height: 3px;
     background-color: rgb(0, 73, 0);
 }
+.lil-margin-l{
+    margin-left: 1rem;
+}
+.itl{
+    font-style: italic;
+}
 /* MAIN */
 main{
     padding-top: 140px;
@@ -229,20 +235,14 @@ main{
     width: 70px;
     height: 70px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ACTIONS */
+.actions p .span-itl {
+    font-style: italic;
+}
+.actions ul li{
+    list-style: circle;
+    margin-left: 2rem;
+}
 /* LOCALISATION */
 .localisation .adress span{
     font-weight: bold;
@@ -252,6 +252,113 @@ iframe.map{
     margin: 0 -10px;
     width: 100vw;
 }
+/* COMPOSTEZ ! */
+/* TOGETHER */
+.together h2{
+    color: #709d42;
+    font-size: 35px;
+
+}
+/* COMPOSTES */
+.compostes{
+    background-color: darkolivegreen;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.compostes article {
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.compostes article:nth-child(3){
+    margin-bottom:0;
+}
+.compostes h3{
+    font-size: 25px;
+    color: rgb(59, 102, 59);
+    text-align: center;
+}
+.compostes h3 span{
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+}
+.compostes li{
+    padding: 0.5rem;
+    text-align: center;
+    list-style: inside;
+    color: rgb(42, 54, 17);
+}
+/* DETENDEZ VOUS */
+.detente p.value{
+    font-size:30px;
+}
+.detente .warning{
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: darkolivegreen;
+    color: white;
+}
+.warning span{
+    width: 100%;
+    display: inline-block;
+}
+.warning span img{
+    width: 70px;
+}
+/* ATELIERS */
+.ateliers{
+    background-color: darkolivegreen;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.ateliers-lighbg{
+    padding: 0.5rem;
+    background-color: darkolivegreen;
+}
+.ateliers h2{
+    color: var(--bg-color);
+    font-size: 35px;
+}
+.ateliers p, .ateliers li{
+    color: var(--bg-color);
+}
+.ateliers li{
+    padding: 0.5rem;
+    text-align: center;
+    list-style: inside;
+}
+/* GALERIE */
+
+/* CONTACT */
+footer h2{
+    color: rgb(39, 73, 39);
+    margin: 0 10px;
+    text-align: center;
+}
+.blockquote-content span{
+    display: inline-block;
+    margin: 10px 0;
+}
+footer .allQuotes .blockquote{
+    padding: 0 20px;
+}
+footer .allQuotes .blockquote .blockquote-content {
+    font-size: 20px;
+}
+footer .link{
+    margin: 0 10px;
+    color: rgb(39, 73, 39);
+}
+
+
+
+
+
 
 @media screen and (min-width: 769px){
     .allQuotes{
