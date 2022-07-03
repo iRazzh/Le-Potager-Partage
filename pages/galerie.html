@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Galerie</title>
 	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
 <body>
 	
 	<header id="masthead">
 		<div class="logo-header">
 			<a href="../index.html">
-				<img class="picto-logo" src="../images/logo-txt.png" alt="Logo du Jardin Potager">
+				<img class="picto-logo" src="../images/logo-txt.png" alt="Logo du Jardin Partager">
 			</a>
 		</div>
 		<nav class="navigation">
@@ -36,13 +37,69 @@
 
 	<main>
         <h1>Galerie</h1>
-        <p>Retrouvez ici les dernières photos et vidéos de notre jardin :</p>
-    
+        <p class="lil-margin-b">Retrouvez ici les dernières photos de notre jardin :</p>
+		
+		<div class="customer-logos slider">
+			<div class="slide">
+			  	<img src="../images/slider/img-1.jpg" alt="Image d'un bac" class="img-responsive">
+				<p class="detail-img-slider">Bac</p>
+			</div>
+	
+			<div class="slide">
+			  <img src="../images/slider/img-2.jpg" alt="Image montrant de la paille" class="img-responsive">
+			  <p class="detail-img-slider">Pailles</p>
+			</div>
+	
+			<div class="slide">
+			  <img src="../images/slider/img-3.jpg" alt="" class="img-responsive">
+			</div>
+	
+			<div class="slide">
+			  <img src="../images/slider/img-4.jpg" alt="" class="img-responsive">
+			</div>
+	
+			<div class="slide">
+			  <img src="../images/slider/img-5.jpg" alt="" class="img-responsive">
+			</div>
+		</div>
+
     </main>
 
+	<hr>
+
 	<footer>
-		
+		<div class="logo-header">
+			<a href="../index.html">
+				<img class="picto-logo" src="../images/logo-txt.png" alt="Logo du Jardin Potager">
+			</a>
+		</div>
+		<h2>SOYONS  SOLIDAIRES  ET  NON  SOLITAIRES</h2>
+
+		<section class="allQuotes">
+			<div class="blockquote">
+				<p class="blockquote-content">“Un jour, dit la légende, il y eut un immense incendie de forêt. 
+					Tous les animaux terrifiés et atterrés, observaient impuissants le désastre.
+					Seul le petit colibri s’activait, allant chercher quelques gouttes d’eau dans son bec pour les jeter sur le feu.
+					Au bout d’un moment, le tatou, agacé par ses agissements dérisoires, lui dit :
+					<span>-”Colibri, tu n'es pas fou ? Tu crois que c’est avec ces quelques gouttes d’eau que tu vas éteindre le feu ?”</span>
+					<span>- “Qu’importe, répondit le colibri … je fais ma part.”</span></p>
+				<p class="blockquote-author">- Pierre Rabhi</p>
+			</div>
+		</section>
+
+		<section class="link">
+			<p><a href="./pages/galerie.html">Galerie</a></p>
+			<p><a href="./pages/bourse.html">Notre bon coin</a></p>
+			<p><a href="https://www.facebook.com/groups/348710417268671">Facebook</a></p>
+			<p><a href="https://www.youtube.com/channel/UC5xYo2Wz-glybwNWbY6y9dA">Youtube</a></p>
+			<p><a href="https://discord.gg/b2tM2G27">Discord</a></p>
+		</section>
 	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="../js/menu_burger.js"></script>
+	<script src="../js/slider.js"></script>
+
 </body>
 </html>

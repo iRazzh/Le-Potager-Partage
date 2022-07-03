@@ -335,6 +335,42 @@ iframe.map{
 /* GALERIE */
 
 /* CONTACT */
+.contact h2{
+    color: rgb(39, 73, 39);
+    font-size: 30px;
+}
+.contact article h3{
+    color: darkolivegreen;
+    font-size:25px;
+}
+.contact article h3, .contact article a{
+    text-align: center;
+}
+.contact article a{
+    text-decoration: underline;
+}
+.contact article {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* SLIDER */
+.slick-slider {
+    margin: 0 -10px;
+    width: 100vw;
+}
+.slick-slide {
+    margin: 0 10px;
+}
+.slick-slide img{
+    height: 200px;
+    object-fit: cover;
+}
+.detail-img-slider{
+    text-align: center;
+    font-style: italic;
+}
+/* FOOTER */
 footer h2{
     color: rgb(39, 73, 39);
     margin: 0 10px;
