@@ -20,7 +20,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: --w;
     background-color: var(--bg-color);
 }
 .logo-header{
@@ -390,12 +389,20 @@ footer .link{
     margin: 0 10px;
     color: rgb(39, 73, 39);
 }
-
-
-
-
-
-
+@media screen and (min-width: 426px){
+    .values{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .values .value{
+        width: 45%;
+    }
+    footer .link{
+        display: flex;
+        justify-content: space-between;
+    }
+}
 @media screen and (min-width: 769px){
     .allQuotes{
         display: flex;
@@ -406,4 +413,104 @@ footer .link{
     .displayDesk{
         display: block;
     }
+    .philo-img, .compostes{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .philo-img img{
+        width: 30%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .compostes article{
+        width: 33%;
+        height: 965px;
+    }
+    .ateliers-maman{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ateliers-maman img{
+        width: 49%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .slick-slide img{
+        height: 250px;
+    }
+    .press-room{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .press-room h2{
+        width: 100%
+    }
+    .press-room article{
+        width: 49%;
+    }
+    .press-room img{
+        height: auto;
+    }
 }
+@media screen and (min-width: 1301px){
+    #masthead{
+        flex-wrap: initial;
+        box-shadow: 0 5px 5px rgb(92 100 36 / 15%)
+    }
+    .logo-header{
+        text-align: left;
+        width: 50%;
+    }
+    .logo-header .picto-logo{
+        width: 480px;
+        height: 115px;
+    }
+    .navigation{
+        width: 70%;
+        margin-right: 1rem;
+    }
+    .cont-lignes{
+        display: none;
+    }
+    .inside-navigation{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: initial;
+        display: block;
+    }
+    .inside-navigation ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .li-nav{
+        width: initial;
+        margin: 0;
+        padding: 15px;
+    }
+    main, footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .values{
+        justify-content: space-between;
+
+    }
+    .values .value{
+        width: 30%;
+    }
+    iframe.map{
+        margin: 0 calc(50% - 50vw);
+        height: 800px;
+    }
+    .slick-slider{
+        margin: 0 calc(50% - 50vw);
+    }
+    .slick-slide img{
+        height: 400px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+}   
