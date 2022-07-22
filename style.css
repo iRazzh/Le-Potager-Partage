@@ -4,8 +4,9 @@
     padding: 0;
 }
 :root{
-    --bg-color: rgb(255, 251, 236);
+    --bg-color: #F3EFCC;
     --dark-green: #293825;
+    --txt-dark-green: 
     --w: #ffff
 }
 body{
@@ -21,6 +22,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--bg-color);
+    box-shadow: 0 3px 3px rgb(0 73 0 / 15%);
+    padding-bottom: 1rem;
 }
 .logo-header{
     width: 100%;
@@ -39,8 +42,8 @@ body{
 .inside-navigation{
     width: 90%;
     margin: 1rem auto;
-    background-color: green;
-    border-radius: 30px;
+    background-color: rgb(0, 73, 0);
+    border-radius: 20px;
     text-align: center;
     padding: 1rem 0;
     display: none;
@@ -96,7 +99,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--dark-green);
 }
 img{
     width: 100%;
@@ -131,7 +134,7 @@ hr{
 }
 /* MAIN */
 main{
-    padding-top: 140px;
+    padding-top: 160px;
     margin: 0 10px;
 }
 /* QUOTES */
@@ -142,17 +145,17 @@ main{
 }
 .allQuotes .blockquote .blockquote-content{
     position: relative;
-    color: rgb(132, 146, 112);
+    color: rgb(0, 73, 0);
     font-size: 1.8rem;
     line-height: 1;
-    border: 2px solid green;
+    border: 2px solid rgb(0, 73, 0);
     border-radius:20px;
     padding: 20px;
 }
 .allQuotes .blockquote .blockquote-content::after{
     content:"";
     position: absolute;
-    border: 2px solid green;
+    border: 2px solid rgb(0, 73, 0);
     border-radius: 0 50px 0 0;
     width: 60px;
     height: 60px;
@@ -173,7 +176,7 @@ main{
 
 .allQuotes .blockquote .blockquote-author {
     position: relative;
-    color: #e74848;
+    color: #F37878;
     font-size: 1.3rem;
     font-style: italic;
     padding-top: 15px;
@@ -293,31 +296,16 @@ iframe.map{
 .detente p.value{
     font-size:30px;
 }
-.detente .warning{
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 25px;
-    background-color: darkolivegreen;
-    color: white;
-}
-.warning span{
-    width: 100%;
-    display: inline-block;
-}
-.warning span img{
-    width: 70px;
-}
 /* ATELIERS */
 .ateliers{
-    background-color: darkolivegreen;
+    background-color: rgb(0, 73, 0);
     padding: 0.5rem;
     border-radius: 10px;
     text-align: center;
 }
 .ateliers-lighbg{
     padding: 0.5rem;
-    background-color: darkolivegreen;
+    background-color: rgb(0, 73, 0);
 }
 .ateliers h2{
     color: var(--bg-color);
@@ -365,10 +353,6 @@ iframe.map{
     height: 200px;
     object-fit: cover;
 }
-.detail-img-slider{
-    text-align: center;
-    font-style: italic;
-}
 /* FOOTER */
 footer h2{
     color: rgb(39, 73, 39);
@@ -389,6 +373,9 @@ footer .link{
     margin: 0 10px;
     color: rgb(39, 73, 39);
 }
+footer .link p a{
+    font-size: 20px;
+}
 @media screen and (min-width: 426px){
     .values{
         display: flex;
@@ -401,6 +388,12 @@ footer .link{
     footer .link{
         display: flex;
         justify-content: space-between;
+    }
+    hr{
+        width: 30%;
+    }
+    .hr-footer{
+        width: 100%;
     }
 }
 @media screen and (min-width: 769px){
@@ -424,7 +417,8 @@ footer .link{
     }
     .compostes article{
         width: 33%;
-        height: 965px;
+        height: auto;
+        margin-bottom:0;    
     }
     .ateliers-maman{
         display: flex;
@@ -452,6 +446,9 @@ footer .link{
     .press-room img{
         height: auto;
     }
+}
+@media screen and (min-width: 1025){
+
 }
 @media screen and (min-width: 1301px){
     #masthead{
@@ -488,6 +485,9 @@ footer .link{
         width: initial;
         margin: 0;
         padding: 15px;
+    }
+    .compostes article{
+        height: 800px;
     }
     main, footer{
         max-width: 1200px;
