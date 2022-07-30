@@ -192,7 +192,7 @@ main{
 .value{
     background-color: var(--dark-green);
     text-align: center;
-    padding: 2.5rem 1rem;
+    padding: 1.5rem 1rem;
     text-shadow: -1px 1px 0 #709d42;
     color: white;
     border-radius: 10px;
@@ -203,6 +203,10 @@ main{
 }
 .value h2{
     font-size: 40px;
+}
+.values-logo{
+    width: 100px;
+    height: 50px;
 }
 /* PHILOSOPHIE */
 .philosophie h2{
@@ -341,6 +345,15 @@ iframe.map{
     padding: 10px;
     border-radius: 10px;
 }
+.contact-info{
+    display: flex;
+    align-items: center;
+}
+.contact .logo-footer{
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
 /* SLIDER */
 .slick-slider {
     margin: 0 -10px;
@@ -350,13 +363,23 @@ iframe.map{
     margin: 0 10px;
 }
 .slick-slide img{
-    height: 200px;
+    height: 150px;
     object-fit: cover;
 }
+.slider-for{
+    margin-bottom: 2rem!important;
+}
+.slider-for img{
+    object-fit: cover;
+    object-position: 50% 70%;
+    height: 250px;
+}
 /* FOOTER */
+footer{
+    margin: 0 10px;
+}
 footer h2{
     color: rgb(39, 73, 39);
-    margin: 0 10px;
     text-align: center;
 }
 .blockquote-content span{
@@ -370,11 +393,13 @@ footer .allQuotes .blockquote .blockquote-content {
     font-size: 20px;
 }
 footer .link{
-    margin: 0 10px;
     color: rgb(39, 73, 39);
 }
 footer .link p a{
     font-size: 20px;
+}
+footer .localisation{
+    text-align: center;
 }
 @media screen and (min-width: 426px){
     .values{
@@ -394,6 +419,9 @@ footer .link p a{
     }
     .hr-footer{
         width: 100%;
+    }
+    .slider-for img{
+        height: 400px;
     }
 }
 @media screen and (min-width: 769px){
@@ -429,8 +457,11 @@ footer .link p a{
         height: 300px;
         object-fit: cover;
     }
+    .slider-for img{
+        height: 500px!important;
+    }
     .slick-slide img{
-        height: 250px;
+        height: 150px;
     }
     .press-room{
         display: flex;
@@ -446,9 +477,6 @@ footer .link p a{
     .press-room img{
         height: auto;
     }
-}
-@media screen and (min-width: 1025){
-
 }
 @media screen and (min-width: 1301px){
     #masthead{
@@ -501,16 +529,26 @@ footer .link p a{
         width: 30%;
     }
     iframe.map{
-        margin: 0 calc(50% - 50vw);
-        height: 800px;
+        width: 100%;
     }
     .slick-slider{
         margin: 0 calc(50% - 50vw);
     }
+    .slider-for img{
+        height: 800px!important;
+    }
     .slick-slide img{
-        height: 400px;
+        height: 250px;
     }
     footer{
         padding-bottom: 20px;
     }
 }   
+@media screen and (min-width: 1441px){
+    .slider-for img{
+        height: 1000px!important;
+    }
+    .slick-slide img{
+        height: 350px;
+    }
+}
